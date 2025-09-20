@@ -1,0 +1,8 @@
+name: WebMC
+version: '0.1-1.21.1'
+main: net.ravinvt.webMC.WebMC
+api-version: '1.21'
+prefix: WebMC
+authors: [ RavinVT ]
+description: Let's you host a website throught minecraft and let the website interact with minecraft.
+website: https://github.com/RavinVT/WebMC
