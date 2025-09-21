@@ -31,9 +31,14 @@ public final class WebMC extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        if (!getDataFolder().exists()) {
+            getDataFolder().mkdirs();
+        }
         basepath = getDataFolder();
+
         htmlpath = new File(basepath, "html");
         logger = getLogger();
+        plugin = this;
         File config_file = new File(basepath, "config.yml");
         if (!config_file.exists()) {
             saveDefaultConfig();
@@ -59,8 +64,6 @@ public final class WebMC extends JavaPlugin {
         if (rules.getInt("version") < version) {
             logger.warning("Heads up, routes are outdated, this might not be an issue!");
         }
-
-        plugin = this;
 
         logger.info("Loading WebMC");
         try {
