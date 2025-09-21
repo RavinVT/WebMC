@@ -4,5 +4,18 @@ main: net.ravinvt.webMC.WebMC
 api-version: '1.21'
 prefix: WebMC
 authors: [ RavinVT ]
-description: Let's you host a website throught minecraft and let the website interact with minecraft.
+description: Let's you host a website through minecraft and let the website interact with minecraft.
 website: https://github.com/RavinVT/WebMC
+commands:
+  web-reload:
+    description: Reloads the websites config & rules
+    permission: permission.webmc.web-reload
+  alive-web:
+    description: Checks to see if the website is alive
+    permission: permission.webmc.alive-web
+  start-web:
+    description: Starts the web server
+    permission: permission.webmc.start-web
+  stop-web:
+    description: Stops the web server
+    permission: permission.webmc.stop-web

@@ -1,0 +1,4 @@
+version: 1
+
+port: 2334
+show-url: "https://localhost:2334/"

@@ -1,0 +1,7 @@
+version: 1
+
+rules:
+    - route: "/"
+      html: "home.html"
+    - route: "/link"
+      html: "auto"
